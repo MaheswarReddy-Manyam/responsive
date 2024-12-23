@@ -3250,6 +3250,16 @@ function responsive_customizer_styles() {
 			}
 		";
 	}
+	// Apply Global Button Settings for RAE Button widget.
+	// $button_
+	$custom_css .="
+		.elementor-widget-rael-button .rael-button {
+			border: {$buttons_border_width}px solid {$button_border_color};
+		}
+		.elementor-widget-rael-button .rael-button:hover {
+			border: {$buttons_border_width}px solid {$button_hover_border_color};
+		}
+	";
 
 	/**Header Footer Builder Styles */
 	$custom_css .= "
