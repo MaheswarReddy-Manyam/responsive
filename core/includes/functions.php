@@ -1712,7 +1712,7 @@ endif;
 
 /**
  * Function to check whethere an element present in given array.
- * @since 6.0.2
+ * @since 6.1.0
  */
 
 function responsive_check_element_present_in_hfb( $component, $builder_type ) {
