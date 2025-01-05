@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
+import Icons from '../icons';
 
 const SelectButtonComponent = props => {
 
@@ -48,6 +49,28 @@ const SelectButtonComponent = props => {
 				</button>
 			);
 		}
+		if (icon.toLowerCase().includes('icon')) {
+			return Icons[icon]? (
+				<button
+					key={choiceValue}
+					type="button"
+					className={`customize-control-responsive-selectbtn__button selectbtn-icon ${props_value === choiceValue ? 'active' : ''}`}
+					onClick={() => onOptionClick(choiceValue)}
+				>
+					{Icons[icon]}
+				</button>
+			) : (
+				<button
+					key={choiceValue}
+					type="button"
+					className={`customize-control-responsive-selectbtn__button selectbtn-icon ${props_value === choiceValue ? 'active' : ''}`}
+					onClick={() => onOptionClick(choiceValue)}
+				>
+					<span className={`responsive-selectbtn-icon icon ${icon}`} />
+				</button>
+			);
+		}
+	
 
 		return (
 			<button
