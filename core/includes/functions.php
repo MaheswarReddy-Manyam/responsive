@@ -340,9 +340,9 @@ if ( ! function_exists( 'responsive_setup' ) ) :
 			responisve_old_header_footer_comaptibility_with_hfb();
 			update_option( 'responisve_old_header_footer_comaptibility_with_header_builder_done', true );
 		}
-		if( ! get_option( 'responisve_old_woo_cart_comaptibility_with_header_builder_woo_cart' ) ) {
-			responisve_old_woo_cart_comaptibility_with_header_builder_woo_cart();
-			update_option( 'responisve_old_woo_cart_comaptibility_with_header_builder_woo_cart', true );
+		if( ! get_option( 'responsive_old_woo_cart_comaptibility_with_header_builder_woo_cart' ) ) {
+			responsive_old_woo_cart_comaptibility_with_header_builder_woo_cart();
+			update_option( 'responsive_old_woo_cart_comaptibility_with_header_builder_woo_cart', true );
 		}
 	}
 
@@ -1809,8 +1809,8 @@ function responsive_woo_cart_label_markup(){
  * 
  * @since 6.1.1
  */
-if( ! function_exists( 'responisve_old_woo_cart_comaptibility_with_header_builder_woo_cart' ) ) {
-	function responisve_old_woo_cart_comaptibility_with_header_builder_woo_cart() {
+if( ! function_exists( 'responsive_old_woo_cart_comaptibility_with_header_builder_woo_cart' ) ) {
+	function responsive_old_woo_cart_comaptibility_with_header_builder_woo_cart() {
 
 		$is_cart_element_loaded = responsive_check_element_present_in_hfb( 'woo-cart', 'header' );
 
